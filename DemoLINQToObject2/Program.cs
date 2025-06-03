@@ -12,6 +12,8 @@ foreach (var product in sortedProducts)
     Console.WriteLine(product);
 }
 
+Console.WriteLine("--------------------------------------------------");
+
 //Case 2: Sort Product Price Descending
 //using Method Syntax - Query Syntax
 
@@ -20,3 +22,8 @@ foreach (var product in sortList)
 {
     Console.WriteLine(product);
 }
+
+//Case 3: Calculate Total Price of Products
+
+double total = listProduct.CalculateTotalPrice();
+Console.WriteLine($"Total Price of Products: {total}");

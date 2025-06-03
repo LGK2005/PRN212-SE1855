@@ -57,5 +57,10 @@ namespace DemoLINQToObject2
 
             return rs.ToList();
         }
+
+        public double CalculateTotalPrice()
+        {
+            return products.Sum(p => p.Price * p.Quantity);
+        }
     }
 }
