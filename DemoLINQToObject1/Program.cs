@@ -19,3 +19,24 @@ foreach (var item in evenListQuery)
 {
     Console.Write(item + " ");
 }
+
+//Case 2: Sort and increase each odd number in list by 2
+
+var arr2 = arr.Where(x => x % 2 != 0)
+              .Select(x => x + 2);
+
+Console.WriteLine("\nDanh sách số lẻ trong mảng tăng thêm 2:");
+foreach (var item in arr2)
+{
+    Console.Write(item + " ");
+}
+
+//Case 3: Ascending Sort
+var arr3 = arr.OrderBy(x => x);
+var arr4 = from x in arr orderby x select x;
+
+Console.WriteLine("\nDanh sách sắp xếp tăng dần:");
+foreach (var item in arr3)
+{
+    Console.Write(item + " ");
+}
