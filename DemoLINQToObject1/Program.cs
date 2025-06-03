@@ -40,3 +40,9 @@ foreach (var item in arr3)
 {
     Console.Write(item + " ");
 }
+
+//Case 4: Descending Sort
+var arr5 = arr.OrderByDescending(x => x);
+var arr6 = from x in arr orderby x descending select x;
+
+//Case 5: Count odd number
