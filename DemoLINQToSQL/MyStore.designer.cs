@@ -41,6 +41,8 @@ namespace DemoLINQToSQL
     partial void DeleteProduct(Product instance);
     #endregion
 		
+
+
 		public MyStoreDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
