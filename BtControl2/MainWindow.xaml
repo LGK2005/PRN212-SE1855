@@ -1,0 +1,23 @@
+﻿<Window x:Class="BtControl2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BtControl2"
+        mc:Ignorable="d"
+        Title="SE193928 - Lam Gia Kiet" Height="200" Width="300">
+    <StackPanel>
+        <Label>Ban thich nhung gi?</Label>
+        <CheckBox Name="chkToanBo"
+                  Checked="ChkToanBo_Checked"
+                  Unchecked="ChkToanBo_Unchecked">
+            Thich toan bo hoat dong</CheckBox>
+        <StackPanel Margin="20,0">
+            <CheckBox Name="chkCongNghe" Checked="chkSub_CheckedChanged" Unchecked="chkSub_CheckedChanged">Thich nghien cuu cong nghe</CheckBox>
+            <CheckBox Name="chkDuLich" Checked="chkSub_CheckedChanged" Unchecked="chkSub_CheckedChanged">Thich du lich</CheckBox>
+            <CheckBox Name="chkDaBong" Checked="chkSub_CheckedChanged" Unchecked="chkSub_CheckedChanged">Thich da bong</CheckBox>
+            <CheckBox Name="chkXemPhim" Checked="chkSub_CheckedChanged" Unchecked="chkSub_CheckedChanged">Thich xem phim</CheckBox>
+            
+        </StackPanel>
+    </StackPanel>
+</Window>
