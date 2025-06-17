@@ -1,0 +1,46 @@
+﻿<Window x:Class="BtControl3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BtControl3"
+        mc:Ignorable="d"
+        Title="SE193928 - Lam Gia Kiet" Height="450" Width="800">
+    <StackPanel>
+        <GroupBox Header="Ban thay he thong the nao?">
+            <StackPanel>
+                <RadioButton GroupName="hethong"
+                             Name="radRatTot">Rat Tot</RadioButton>
+                <RadioButton GroupName="hethong"
+                             Name="radTot">Tot</RadioButton>
+                <RadioButton GroupName="hethong"
+                             Name="radTamDuoc">Tam Duoc</RadioButton>
+                <RadioButton GroupName="hethong"
+                             Name="radKhongTot">Khong Tot</RadioButton>
+                
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Gioi tinh cua ban la gi?">
+            <StackPanel>
+                <RadioButton GroupName="gioitinh"
+                             Name="radNam">Nam</RadioButton>
+                <RadioButton GroupName="gioitinh"
+                             Name="radNu">Nu</RadioButton>
+
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Chom tac vu:">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Gui phan hoi" Name="btnGui"
+                        Width="100" Margin="10,0"
+                        Click="BtnGui_Click"></Button>
+                <Button Content="Huy" Name="btnHuy"
+                        Width="100" Margin="10,0"
+                        Click="BtnHuy_Click"></Button>
+
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Window>
