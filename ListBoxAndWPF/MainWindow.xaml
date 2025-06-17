@@ -1,0 +1,26 @@
+﻿<Window x:Class="ListBoxAndWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListBoxAndWPF"
+        mc:Ignorable="d"
+        Title="SE193928 - Lam Gia Kiet" Height="360" Width="282">
+    <Grid>
+        <TextBox Name="txtGiaTri" HorizontalAlignment="Left" Margin="18,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnThem" Content="Them vao List" HorizontalAlignment="Left" Margin="186,10,0,0" VerticalAlignment="Top" Click="btnThem_Click"/>
+        <ListBox Name="listDuLieu" SelectionMode="Multiple" Margin="15,45,141,44"/>
+        <TextBox Name="txtGiaTriChen" HorizontalAlignment="Left" Margin="202,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="62"/>
+        <TextBox Name="txtViTriChen" HorizontalAlignment="Left" Margin="202,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="62"/>
+        <Button Name="btnChen" Content="Chen" HorizontalAlignment="Left" Margin="153,104,0,0" VerticalAlignment="Top" Click="btnChen_Click" Width="110"/>
+        <Button Name="btnSapXepTang" Content="Sap xep tang" HorizontalAlignment="Left" Margin="153,137,0,0" VerticalAlignment="Top" Click="btnSapXepTang_Click" Width="110"/>
+        <Button Name="btnSapXepGiam" Content="Sap xep giam" HorizontalAlignment="Left" Margin="153,172,0,0" VerticalAlignment="Top" Click="btnSapXepGiam_Click" Width="110"/>
+        <Button Name="btnXoa1PhanTu" Content="Xoa 1 phan tu" HorizontalAlignment="Left" Margin="153,207,0,0" VerticalAlignment="Top" Click="btnXoa1PhanTu_Click" Width="111"/>
+        <Button Name="btnXoaNhieuPhanTu" Content="Xoa nhieu phan tu" HorizontalAlignment="Left" Margin="153,243,0,0" VerticalAlignment="Top" Click="btnXoaNhieuPhanTu_Click" Width="110"/>
+        <Button Name="btnXoaToanBoPhanTu" Content="Xoa toan bo phan tu" HorizontalAlignment="Left" Margin="152,280,0,0" VerticalAlignment="Top" Click="btnXoaToanBoPhanTu_Click"/>
+        <Label Content="Gia tri:" HorizontalAlignment="Left" Margin="150,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vi tri:" HorizontalAlignment="Left" Margin="153,70,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
